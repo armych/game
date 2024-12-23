@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점프 게임</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #character-selection {
+            margin-bottom: 20px;
+        canvas {
+            border: 2px solid black;                                                 
+            background-color: #e0ffe0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 캐릭터 선택 메뉴 -->
+    <div id="character-selection">
+        <label for="character">캐릭터 선택: </label>
+        <select id="character">
+            <option value="yellow2.png">캐릭터 1</option>
+            <option value="blue2.png">캐릭터 2</option>
+            <option value="red2.png">캐릭터 3</option>
+        </select>
+        <button onclick="startGame()">게임 시작</button>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="400" style="display:none;"></canvas>
+
+    <!-- 자바스크립트 파일 연결 -->
+    <script src="game.js"></script>
+</body>
+</html>
